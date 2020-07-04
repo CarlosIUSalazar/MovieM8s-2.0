@@ -82,7 +82,7 @@ export default function Table(props){
           <div className="main-title">
             <img src="/moviem8s.png" className="fullTitleImage"/>
           </div>
-          <Link to={"/deck"} >
+          <Link to={"/reports"} >
             <div>
               <button  className="go-back-to-deck" >Go back to decks</button>
             </div>

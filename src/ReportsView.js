@@ -13,6 +13,7 @@ import * as firebase from "firebase";
 import firebaseConfig from "./firebase.config";
 
 import "./styles/Deck.css";
+import {Link} from "react-router-dom";
 
 
 
@@ -247,6 +248,20 @@ export default function Deck({ fetchData}) {
   );
     // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
   return props.map(({ x, y, rot, scale }, i) => (
+    <div className="fullLogoImageContainer" >
+    <div className="main-logo">
+      <img src="/MovieM8SLogo.png" className="mainLogo"/>
+    </div>
+    <div className="main-title">
+      <img src="/moviem8s.png" className="fullTitleImage"/>
+    </div>
+    <Link to={"/table"} >
+      <div>
+        <button  className="go-back-to-deck" >Go to table</button>
+      </div>
+    </Link>
+  
+
         <Card
           i={i}
           x={x}
@@ -257,7 +272,9 @@ export default function Deck({ fetchData}) {
           data={data}
           bind={bind}
         />
+        </div>
       ))
+      
 }
 
 
