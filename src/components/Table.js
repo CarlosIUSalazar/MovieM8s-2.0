@@ -91,9 +91,7 @@ export default function Table(props){
       <main style={{overflow : "scroll"}}>
  
         <div className="favTableContainer" style={{overflow : "scroll"}}>
-  
           <div className="container-fluid" style={{overflow : "scroll"}}>
-            
             <table style={{overflow : "scroll"}} className="table table-sm table-striped table-dark table-hover">
             <div className="deleteAllMoviesButtonContainer">
                           <button className="deleteAllMoviesButton" onClick={() => deleteMoviesOnTable()}>Delete All Movies</button>
