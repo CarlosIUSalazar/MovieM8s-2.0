@@ -88,7 +88,6 @@ export default function Table(props){
             </div>
           </Link>
         </div>
- 
       <main style={{overflow : "scroll"}}>
  
         <div className="favTableContainer" style={{overflow : "scroll"}}>
